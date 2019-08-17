@@ -1,0 +1,11 @@
+<h1>{{review.title}}</h1>
+<h2>{{review.movieTitle}}</h2>
+<p>{{review.description}}</p>
+
+<p><a href="/reviews/{{ review._id }}/edit">Edit</a></p>
+
+<!-- Delete button -->
+<p><form method="POST" action="/reviews/{{ review._id }}/delete">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete</button>
+</form></p>

@@ -1,0 +1,27 @@
+<form method="POST" action="/reviews/{{review._id}}">
+    <input type="hidden" name="_method" value="PUT"/>
+    <fieldset>
+      <legend>Edit Review</legend>
+      <!-- TITLE -->
+      <p>
+        <label for="review-title">Title</label><br>
+        <input id="review-title" type="text" name="title" value="{{review.title}}"/>
+      </p>
+
+      <!-- MOVIE TITLE -->
+      <p>
+        <label for="movie-title">Movie Title</label><br>
+        <input id="movie-title" type="text" name="movieTitle" value="{{review.movieTitle}}" />
+      </p>
+  
+      <!-- DESCRIPTION -->
+      <p>
+        <label for="review-description">Description</label><br>
+        <textarea id="review-description" name="description" rows="10" />{{review.description}}</textarea>
+      </p>
+    </fieldset>
+    <!-- BUTTON -->
+    <p>
+      <button type="submit">Save Review</button>
+    </p>
+  </form>

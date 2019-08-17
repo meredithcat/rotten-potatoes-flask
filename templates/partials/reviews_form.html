@@ -1,0 +1,20 @@
+<fieldset>
+    <legend>{{ title }}</legend>
+    <!-- TITLE -->
+    <p>
+      <label for="review-title">Title</label><br>
+      <input id="review-title" type="text" name="title" value="{{ review.title }}"/>
+    </p>
+
+    <!-- MOVIE TITLE -->
+    <p>
+      <label for="movie-title">Movie Title</label><br>
+      <input id="movie-title" type="text" name="movieTitle" value="{{ review.movieTitle }}" />
+    </p>
+
+    <!-- DESCRIPTION -->
+    <p>
+      <label for="review-description">Description</label><br>
+      <textarea id="review-description" name="description" rows="10" />{{ review.description }}</textarea>
+    </p>
+  </fieldset>
